@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C8BB4851DEC128F0080E6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4841DEC128F0080E6BA /* main.m */; };
+		0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4871DEC128F0080E6BA /* AppDelegate.m */; };
+		0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB48A1DEC128F0080E6BA /* ViewController.m */; };
+		0C8BB48E1DEC128F0080E6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BB48C1DEC128F0080E6BA /* Main.storyboard */; };
+		0C8BB4901DEC128F0080E6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BB48F1DEC128F0080E6BA /* Assets.xcassets */; };
+		0C8BB4931DEC128F0080E6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BB4911DEC128F0080E6BA /* LaunchScreen.storyboard */; };
+		0C8BB49E1DEC128F0080E6BA /* ZYDebugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB49D1DEC128F0080E6BA /* ZYDebugTests.m */; };
+		0C8BB4A91DEC128F0080E6BA /* ZYDebugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4A81DEC128F0080E6BA /* ZYDebugUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C8BB49A1DEC128F0080E6BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C8BB4781DEC128F0080E6BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8BB47F1DEC128F0080E6BA;
+			remoteInfo = ZYDebug;
+		};
+		0C8BB4A51DEC128F0080E6BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C8BB4781DEC128F0080E6BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8BB47F1DEC128F0080E6BA;
+			remoteInfo = ZYDebug;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C8BB4801DEC128F0080E6BA /* ZYDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8BB4841DEC128F0080E6BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0C8BB4861DEC128F0080E6BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0C8BB4871DEC128F0080E6BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0C8BB4891DEC128F0080E6BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0C8BB48A1DEC128F0080E6BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0C8BB48D1DEC128F0080E6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C8BB48F1DEC128F0080E6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C8BB4921DEC128F0080E6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C8BB4941DEC128F0080E6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8BB4991DEC128F0080E6BA /* ZYDebugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYDebugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8BB49D1DEC128F0080E6BA /* ZYDebugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYDebugTests.m; sourceTree = "<group>"; };
+		0C8BB49F1DEC128F0080E6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8BB4A41DEC128F0080E6BA /* ZYDebugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYDebugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8BB4A81DEC128F0080E6BA /* ZYDebugUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYDebugUITests.m; sourceTree = "<group>"; };
+		0C8BB4AA1DEC128F0080E6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C8BB47D1DEC128F0080E6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8BB4961DEC128F0080E6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8BB4A11DEC128F0080E6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C8BB4771DEC128F0080E6BA = {
+			isa = PBXGroup;
+			children = (
+				0C8BB4821DEC128F0080E6BA /* ZYDebug */,
+				0C8BB49C1DEC128F0080E6BA /* ZYDebugTests */,
+				0C8BB4A71DEC128F0080E6BA /* ZYDebugUITests */,
+				0C8BB4811DEC128F0080E6BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C8BB4811DEC128F0080E6BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB4801DEC128F0080E6BA /* ZYDebug.app */,
+				0C8BB4991DEC128F0080E6BA /* ZYDebugTests.xctest */,
+				0C8BB4A41DEC128F0080E6BA /* ZYDebugUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C8BB4821DEC128F0080E6BA /* ZYDebug */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB4861DEC128F0080E6BA /* AppDelegate.h */,
+				0C8BB4871DEC128F0080E6BA /* AppDelegate.m */,
+				0C8BB4891DEC128F0080E6BA /* ViewController.h */,
+				0C8BB48A1DEC128F0080E6BA /* ViewController.m */,
+				0C8BB48C1DEC128F0080E6BA /* Main.storyboard */,
+				0C8BB48F1DEC128F0080E6BA /* Assets.xcassets */,
+				0C8BB4911DEC128F0080E6BA /* LaunchScreen.storyboard */,
+				0C8BB4941DEC128F0080E6BA /* Info.plist */,
+				0C8BB4831DEC128F0080E6BA /* Supporting Files */,
+			);
+			path = ZYDebug;
+			sourceTree = "<group>";
+		};
+		0C8BB4831DEC128F0080E6BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB4841DEC128F0080E6BA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0C8BB49C1DEC128F0080E6BA /* ZYDebugTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB49D1DEC128F0080E6BA /* ZYDebugTests.m */,
+				0C8BB49F1DEC128F0080E6BA /* Info.plist */,
+			);
+			path = ZYDebugTests;
+			sourceTree = "<group>";
+		};
+		0C8BB4A71DEC128F0080E6BA /* ZYDebugUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB4A81DEC128F0080E6BA /* ZYDebugUITests.m */,
+				0C8BB4AA1DEC128F0080E6BA /* Info.plist */,
+			);
+			path = ZYDebugUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C8BB47F1DEC128F0080E6BA /* ZYDebug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8BB4AD1DEC128F0080E6BA /* Build configuration list for PBXNativeTarget "ZYDebug" */;
+			buildPhases = (
+				0C8BB47C1DEC128F0080E6BA /* Sources */,
+				0C8BB47D1DEC128F0080E6BA /* Frameworks */,
+				0C8BB47E1DEC128F0080E6BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYDebug;
+			productName = ZYDebug;
+			productReference = 0C8BB4801DEC128F0080E6BA /* ZYDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C8BB4981DEC128F0080E6BA /* ZYDebugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8BB4B01DEC128F0080E6BA /* Build configuration list for PBXNativeTarget "ZYDebugTests" */;
+			buildPhases = (
+				0C8BB4951DEC128F0080E6BA /* Sources */,
+				0C8BB4961DEC128F0080E6BA /* Frameworks */,
+				0C8BB4971DEC128F0080E6BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C8BB49B1DEC128F0080E6BA /* PBXTargetDependency */,
+			);
+			name = ZYDebugTests;
+			productName = ZYDebugTests;
+			productReference = 0C8BB4991DEC128F0080E6BA /* ZYDebugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C8BB4A31DEC128F0080E6BA /* ZYDebugUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8BB4B31DEC128F0080E6BA /* Build configuration list for PBXNativeTarget "ZYDebugUITests" */;
+			buildPhases = (
+				0C8BB4A01DEC128F0080E6BA /* Sources */,
+				0C8BB4A11DEC128F0080E6BA /* Frameworks */,
+				0C8BB4A21DEC128F0080E6BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C8BB4A61DEC128F0080E6BA /* PBXTargetDependency */,
+			);
+			name = ZYDebugUITests;
+			productName = ZYDebugUITests;
+			productReference = 0C8BB4A41DEC128F0080E6BA /* ZYDebugUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C8BB4781DEC128F0080E6BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = zhaoyang;
+				TargetAttributes = {
+					0C8BB47F1DEC128F0080E6BA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C73Q85RKN6;
+						ProvisioningStyle = Automatic;
+					};
+					0C8BB4981DEC128F0080E6BA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C73Q85RKN6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0C8BB47F1DEC128F0080E6BA;
+					};
+					0C8BB4A31DEC128F0080E6BA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C73Q85RKN6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0C8BB47F1DEC128F0080E6BA;
+					};
+				};
+			};
+			buildConfigurationList = 0C8BB47B1DEC128F0080E6BA /* Build configuration list for PBXProject "ZYDebug" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C8BB4771DEC128F0080E6BA;
+			productRefGroup = 0C8BB4811DEC128F0080E6BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C8BB47F1DEC128F0080E6BA /* ZYDebug */,
+				0C8BB4981DEC128F0080E6BA /* ZYDebugTests */,
+				0C8BB4A31DEC128F0080E6BA /* ZYDebugUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C8BB47E1DEC128F0080E6BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8BB4931DEC128F0080E6BA /* LaunchScreen.storyboard in Resources */,
+				0C8BB4901DEC128F0080E6BA /* Assets.xcassets in Resources */,
+				0C8BB48E1DEC128F0080E6BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8BB4971DEC128F0080E6BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8BB4A21DEC128F0080E6BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C8BB47C1DEC128F0080E6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */,
+				0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */,
+				0C8BB4851DEC128F0080E6BA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8BB4951DEC128F0080E6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8BB49E1DEC128F0080E6BA /* ZYDebugTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8BB4A01DEC128F0080E6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8BB4A91DEC128F0080E6BA /* ZYDebugUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C8BB49B1DEC128F0080E6BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8BB47F1DEC128F0080E6BA /* ZYDebug */;
+			targetProxy = 0C8BB49A1DEC128F0080E6BA /* PBXContainerItemProxy */;
+		};
+		0C8BB4A61DEC128F0080E6BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8BB47F1DEC128F0080E6BA /* ZYDebug */;
+			targetProxy = 0C8BB4A51DEC128F0080E6BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C8BB48C1DEC128F0080E6BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C8BB48D1DEC128F0080E6BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C8BB4911DEC128F0080E6BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C8BB4921DEC128F0080E6BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C8BB4AB1DEC128F0080E6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C8BB4AC1DEC128F0080E6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C8BB4AE1DEC128F0080E6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C73Q85RKN6;
+				INFOPLIST_FILE = ZYDebug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0C8BB4AF1DEC128F0080E6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C73Q85RKN6;
+				INFOPLIST_FILE = ZYDebug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0C8BB4B11DEC128F0080E6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C73Q85RKN6;
+				INFOPLIST_FILE = ZYDebugTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYDebug.app/ZYDebug";
+			};
+			name = Debug;
+		};
+		0C8BB4B21DEC128F0080E6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = C73Q85RKN6;
+				INFOPLIST_FILE = ZYDebugTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYDebug.app/ZYDebug";
+			};
+			name = Release;
+		};
+		0C8BB4B41DEC128F0080E6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C73Q85RKN6;
+				INFOPLIST_FILE = ZYDebugUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYDebug;
+			};
+			name = Debug;
+		};
+		0C8BB4B51DEC128F0080E6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C73Q85RKN6;
+				INFOPLIST_FILE = ZYDebugUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYDebug;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C8BB47B1DEC128F0080E6BA /* Build configuration list for PBXProject "ZYDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8BB4AB1DEC128F0080E6BA /* Debug */,
+				0C8BB4AC1DEC128F0080E6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C8BB4AD1DEC128F0080E6BA /* Build configuration list for PBXNativeTarget "ZYDebug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8BB4AE1DEC128F0080E6BA /* Debug */,
+				0C8BB4AF1DEC128F0080E6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0C8BB4B01DEC128F0080E6BA /* Build configuration list for PBXNativeTarget "ZYDebugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8BB4B11DEC128F0080E6BA /* Debug */,
+				0C8BB4B21DEC128F0080E6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0C8BB4B31DEC128F0080E6BA /* Build configuration list for PBXNativeTarget "ZYDebugUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8BB4B41DEC128F0080E6BA /* Debug */,
+				0C8BB4B51DEC128F0080E6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C8BB4781DEC128F0080E6BA /* Project object */;
+}
