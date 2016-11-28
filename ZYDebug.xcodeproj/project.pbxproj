@@ -15,6 +15,7 @@
 		0C8BB4931DEC128F0080E6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BB4911DEC128F0080E6BA /* LaunchScreen.storyboard */; };
 		0C8BB49E1DEC128F0080E6BA /* ZYDebugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB49D1DEC128F0080E6BA /* ZYDebugTests.m */; };
 		0C8BB4A91DEC128F0080E6BA /* ZYDebugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4A81DEC128F0080E6BA /* ZYDebugUITests.m */; };
+		0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4BB1DEC1E650080E6BA /* UIDevice+ZYHardware.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0C8BB4A41DEC128F0080E6BA /* ZYDebugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYDebugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8BB4A81DEC128F0080E6BA /* ZYDebugUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYDebugUITests.m; sourceTree = "<group>"; };
 		0C8BB4AA1DEC128F0080E6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8BB4BA1DEC1E650080E6BA /* UIDevice+ZYHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ZYHardware.h"; sourceTree = "<group>"; };
+		0C8BB4BB1DEC1E650080E6BA /* UIDevice+ZYHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ZYHardware.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		0C8BB4821DEC128F0080E6BA /* ZYDebug */ = {
 			isa = PBXGroup;
 			children = (
+				0C8BB4B61DEC1A590080E6BA /* Debug */,
 				0C8BB4861DEC128F0080E6BA /* AppDelegate.h */,
 				0C8BB4871DEC128F0080E6BA /* AppDelegate.m */,
 				0C8BB4891DEC128F0080E6BA /* ViewController.h */,
@@ -138,6 +142,39 @@
 				0C8BB4AA1DEC128F0080E6BA /* Info.plist */,
 			);
 			path = ZYDebugUITests;
+			sourceTree = "<group>";
+		};
+		0C8BB4B61DEC1A590080E6BA /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB4B71DEC1A590080E6BA /* Category */,
+				0C8BB4B81DEC1A590080E6BA /* Controller */,
+				0C8BB4B91DEC1A590080E6BA /* Model */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		0C8BB4B71DEC1A590080E6BA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB4BA1DEC1E650080E6BA /* UIDevice+ZYHardware.h */,
+				0C8BB4BB1DEC1E650080E6BA /* UIDevice+ZYHardware.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0C8BB4B81DEC1A590080E6BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C8BB4B91DEC1A590080E6BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +315,7 @@
 			files = (
 				0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */,
 				0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */,
+				0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */,
 				0C8BB4851DEC128F0080E6BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +554,7 @@
 				0C8BB4AF1DEC128F0080E6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C8BB4B01DEC128F0080E6BA /* Build configuration list for PBXNativeTarget "ZYDebugTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +563,7 @@
 				0C8BB4B21DEC128F0080E6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C8BB4B31DEC128F0080E6BA /* Build configuration list for PBXNativeTarget "ZYDebugUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +572,7 @@
 				0C8BB4B51DEC128F0080E6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
