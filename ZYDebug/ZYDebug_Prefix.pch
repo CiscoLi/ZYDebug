@@ -1,0 +1,22 @@
+//
+//  ZYDebug_Prefix.pch
+//  ZYDebug
+//
+//  Created by zhaoyang on 2016/11/29.
+//  Copyright © 2016年 zhaoyang. All rights reserved.
+//
+
+#ifndef ZYDebug_Prefix_pch
+#define ZYDebug_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 配置文件
+#import "ConfigureDef.h"
+#import "CommonDef.h"
+
+// 公用方法
+#import "PublicMethods.h"
+
+#endif /* ZYDebug_Prefix_pch */

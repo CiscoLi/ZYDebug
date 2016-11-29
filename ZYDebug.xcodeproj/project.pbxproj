@@ -17,6 +17,8 @@
 		0C8BB4A91DEC128F0080E6BA /* ZYDebugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4A81DEC128F0080E6BA /* ZYDebugUITests.m */; };
 		0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4BB1DEC1E650080E6BA /* UIDevice+ZYHardware.m */; };
 		0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4BE1DED213F0080E6BA /* Profile.m */; };
+		0C8BB4C41DED4B000080E6BA /* PublicMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4C31DED4B000080E6BA /* PublicMethods.m */; };
+		0C8BB4C71DED4EFD0080E6BA /* ZYDebugServerListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4C61DED4EFD0080E6BA /* ZYDebugServerListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,13 @@
 		0C8BB4BB1DEC1E650080E6BA /* UIDevice+ZYHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ZYHardware.m"; sourceTree = "<group>"; };
 		0C8BB4BD1DED213F0080E6BA /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		0C8BB4BE1DED213F0080E6BA /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		0C8BB4C11DED2DF60080E6BA /* ConfigureDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigureDef.h; sourceTree = "<group>"; };
+		0C8BB4C21DED4B000080E6BA /* PublicMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicMethods.h; sourceTree = "<group>"; };
+		0C8BB4C31DED4B000080E6BA /* PublicMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicMethods.m; sourceTree = "<group>"; };
+		0C8BB4C51DED4EFD0080E6BA /* ZYDebugServerListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDebugServerListVC.h; sourceTree = "<group>"; };
+		0C8BB4C61DED4EFD0080E6BA /* ZYDebugServerListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDebugServerListVC.m; sourceTree = "<group>"; };
+		0C8BB4C81DED4FC10080E6BA /* CommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
+		0C8BB4C91DED50040080E6BA /* ZYDebug_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDebug_Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,7 @@
 		0C8BB4821DEC128F0080E6BA /* ZYDebug */ = {
 			isa = PBXGroup;
 			children = (
+				0C8BB4C01DED2DDD0080E6BA /* Configure */,
 				0C8BB4B61DEC1A590080E6BA /* Debug */,
 				0C8BB4861DEC128F0080E6BA /* AppDelegate.h */,
 				0C8BB4871DEC128F0080E6BA /* AppDelegate.m */,
@@ -125,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0C8BB4841DEC128F0080E6BA /* main.m */,
+				0C8BB4C91DED50040080E6BA /* ZYDebug_Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,6 +180,8 @@
 		0C8BB4B81DEC1A590080E6BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0C8BB4C51DED4EFD0080E6BA /* ZYDebugServerListVC.h */,
+				0C8BB4C61DED4EFD0080E6BA /* ZYDebugServerListVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +193,17 @@
 				0C8BB4BE1DED213F0080E6BA /* Profile.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		0C8BB4C01DED2DDD0080E6BA /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB4C81DED4FC10080E6BA /* CommonDef.h */,
+				0C8BB4C11DED2DF60080E6BA /* ConfigureDef.h */,
+				0C8BB4C21DED4B000080E6BA /* PublicMethods.h */,
+				0C8BB4C31DED4B000080E6BA /* PublicMethods.m */,
+			);
+			path = Configure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,9 +343,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */,
+				0C8BB4C41DED4B000080E6BA /* PublicMethods.m in Sources */,
 				0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */,
 				0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */,
 				0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */,
+				0C8BB4C71DED4EFD0080E6BA /* ZYDebugServerListVC.m in Sources */,
 				0C8BB4851DEC128F0080E6BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +498,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C73Q85RKN6;
+				GCC_PREFIX_HEADER = ZYDebug/ZYDebug_Prefix.pch;
 				INFOPLIST_FILE = ZYDebug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebug;
@@ -484,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C73Q85RKN6;
+				GCC_PREFIX_HEADER = ZYDebug/ZYDebug_Prefix.pch;
 				INFOPLIST_FILE = ZYDebug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebug;
