@@ -16,6 +16,7 @@
 		0C8BB49E1DEC128F0080E6BA /* ZYDebugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB49D1DEC128F0080E6BA /* ZYDebugTests.m */; };
 		0C8BB4A91DEC128F0080E6BA /* ZYDebugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4A81DEC128F0080E6BA /* ZYDebugUITests.m */; };
 		0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4BB1DEC1E650080E6BA /* UIDevice+ZYHardware.m */; };
+		0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4BE1DED213F0080E6BA /* Profile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		0C8BB4AA1DEC128F0080E6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C8BB4BA1DEC1E650080E6BA /* UIDevice+ZYHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ZYHardware.h"; sourceTree = "<group>"; };
 		0C8BB4BB1DEC1E650080E6BA /* UIDevice+ZYHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ZYHardware.m"; sourceTree = "<group>"; };
+		0C8BB4BD1DED213F0080E6BA /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		0C8BB4BE1DED213F0080E6BA /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 		0C8BB4B91DEC1A590080E6BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C8BB4BD1DED213F0080E6BA /* Profile.h */,
+				0C8BB4BE1DED213F0080E6BA /* Profile.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */,
+				0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */,
 				0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */,
 				0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */,
 				0C8BB4851DEC128F0080E6BA /* main.m in Sources */,
