@@ -19,6 +19,8 @@
 		0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4BE1DED213F0080E6BA /* Profile.m */; };
 		0C8BB4C41DED4B000080E6BA /* PublicMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4C31DED4B000080E6BA /* PublicMethods.m */; };
 		0C8BB4C71DED4EFD0080E6BA /* ZYDebugServerListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4C61DED4EFD0080E6BA /* ZYDebugServerListVC.m */; };
+		0C8BB4CC1DEEA4D00080E6BA /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4CB1DEEA4D00080E6BA /* LineView.m */; };
+		0C8BB4CF1DEEA53F0080E6BA /* UIColor+ZYUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4CE1DEEA53F0080E6BA /* UIColor+ZYUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		0C8BB4C61DED4EFD0080E6BA /* ZYDebugServerListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDebugServerListVC.m; sourceTree = "<group>"; };
 		0C8BB4C81DED4FC10080E6BA /* CommonDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDef.h; sourceTree = "<group>"; };
 		0C8BB4C91DED50040080E6BA /* ZYDebug_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDebug_Prefix.pch; sourceTree = "<group>"; };
+		0C8BB4CA1DEEA4D00080E6BA /* LineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineView.h; sourceTree = "<group>"; };
+		0C8BB4CB1DEEA4D00080E6BA /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
+		0C8BB4CD1DEEA53F0080E6BA /* UIColor+ZYUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZYUtility.h"; sourceTree = "<group>"; };
+		0C8BB4CE1DEEA53F0080E6BA /* UIColor+ZYUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZYUtility.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,8 @@
 			children = (
 				0C8BB4BA1DEC1E650080E6BA /* UIDevice+ZYHardware.h */,
 				0C8BB4BB1DEC1E650080E6BA /* UIDevice+ZYHardware.m */,
+				0C8BB4CD1DEEA53F0080E6BA /* UIColor+ZYUtility.h */,
+				0C8BB4CE1DEEA53F0080E6BA /* UIColor+ZYUtility.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -202,6 +210,8 @@
 				0C8BB4C11DED2DF60080E6BA /* ConfigureDef.h */,
 				0C8BB4C21DED4B000080E6BA /* PublicMethods.h */,
 				0C8BB4C31DED4B000080E6BA /* PublicMethods.m */,
+				0C8BB4CA1DEEA4D00080E6BA /* LineView.h */,
+				0C8BB4CB1DEEA4D00080E6BA /* LineView.m */,
 			);
 			path = Configure;
 			sourceTree = "<group>";
@@ -342,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8BB4CC1DEEA4D00080E6BA /* LineView.m in Sources */,
 				0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */,
 				0C8BB4C41DED4B000080E6BA /* PublicMethods.m in Sources */,
 				0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */,
@@ -349,6 +360,7 @@
 				0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */,
 				0C8BB4C71DED4EFD0080E6BA /* ZYDebugServerListVC.m in Sources */,
 				0C8BB4851DEC128F0080E6BA /* main.m in Sources */,
+				0C8BB4CF1DEEA53F0080E6BA /* UIColor+ZYUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +512,7 @@
 				DEVELOPMENT_TEAM = C73Q85RKN6;
 				GCC_PREFIX_HEADER = ZYDebug/ZYDebug_Prefix.pch;
 				INFOPLIST_FILE = ZYDebug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +526,7 @@
 				DEVELOPMENT_TEAM = C73Q85RKN6;
 				GCC_PREFIX_HEADER = ZYDebug/ZYDebug_Prefix.pch;
 				INFOPLIST_FILE = ZYDebug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";

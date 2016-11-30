@@ -10,6 +10,13 @@
 
 @implementation PublicMethods
 
+// 消除键盘
++ (void)resignKeyboard
+{
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate.window endEditing:YES];
+}
+
 #pragma mark Storage Tools
 
 + (void)storeArray:(NSArray *)arrayElements atPathComponent:(NSString *)component forKey:(NSString *)key {

@@ -10,6 +10,9 @@
 
 @interface PublicMethods : NSObject
 
+// 消除键盘
++ (void)resignKeyboard;
+
 + (void)storeArray:(NSArray *)arrayElements atPathComponent:(NSString *)component forKey:(NSString *)key;
 
 + (NSArray *)fetchArrayAtPathComponent:(NSString *)component forKey:(NSString *)key;
