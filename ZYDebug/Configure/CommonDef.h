@@ -9,6 +9,34 @@
 #ifndef CommonDef_h
 #define CommonDef_h
 
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define STATUSBAR_HEIGHT 20
+
+// ==================================================================
+// 当前使用的字体
+// ==================================================================
+#define kCurNormalFontOfSize(fontSize)				[UIFont systemFontOfSize:fontSize]
+#define kCurBoldFontOfSize(fontSize)				[UIFont boldSystemFontOfSize:fontSize]
+#define kCurItalicFontOfSize(fontSize)				[UIFont italicSystemFontOfSize:fontSize]
+
+
+// ==================================================================
+// 常用通知名称(如有需要,都可以在这定义成宏)
+// ==================================================================
+
+
+
+// ==================================================================
+//当前APP自定义属性(如有需要,都可以在这定义成宏,比如颜色,尺寸,切角)
+// ==================================================================
+
+
+
+
+// 颜色
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
 // 判断字符串是否有值
 #define STRINGHASVALUE(str)		(str && [str isKindOfClass:[NSString class]] && [str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]].length > 0)
 
