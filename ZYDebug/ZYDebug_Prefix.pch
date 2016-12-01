@@ -23,5 +23,6 @@
 #import "PublicMethods.h"
 
 #import "UIColor+ZYUtility.h"
+#import "UIDevice+ZYHardware.h"
 
 #endif /* ZYDebug_Prefix_pch */

@@ -298,6 +298,25 @@ void ABNotifierReachabilityDidChange(SCNetworkReachabilityRef target, SCNetworkR
             [exceptionParameters setValue:ABNotifierResidentMemoryUsage() forKey:@"Resident Memory Size"];
             [exceptionParameters setValue:ABNotifierVirtualMemoryUsage() forKey:@"Virtual Memory Size"];
             
+            // 添加时间
+            NSDateFormatter *df = [[NSDateFormatter alloc] init];
+            [df setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+            NSString *dateStr = [df stringFromDate:[NSDate date]];
+            [exceptionParameters setValue:dateStr forKey:@"Error Occured Time"];
+            
+            // 实时更新资源使用情况
+            UIDevice *device = [UIDevice currentDevice];
+            NSArray *usage = [device cpuUsage];
+            NSMutableString *usageStr = [NSMutableString stringWithFormat:@""];
+            for (NSNumber *u in usage) {
+                [usageStr appendString:[NSString stringWithFormat:@"%.1f%% ", [u floatValue]]];
+            }
+            NSString *memoryInfo = [NSString stringWithFormat:@"%.1f / %luM", [device freeMemoryBytes] / 1024.0 / 1024.0, [device totalMemoryBytes] / 1024 / 1024];
+            NSString *diskInfo = [NSString stringWithFormat:@"%llu / %lluG", [device freeDiskSpaceBytes] / (1024*1024*1024),[device totalDiskSpaceBytes] / (1024*1024*1024)];
+            [exceptionParameters setValue:usageStr forKey:@"CPU Information"];
+            [exceptionParameters setValue:memoryInfo forKey:@"Memory Information"];
+            [exceptionParameters setValue:diskInfo forKey:@"Disk Information"];
+            
             // write exception
             NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:
                                         [exception name], ABNotifierExceptionNameKey,
