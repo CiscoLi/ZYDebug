@@ -21,6 +21,13 @@
 		0C8BB4C71DED4EFD0080E6BA /* ZYDebugServerListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4C61DED4EFD0080E6BA /* ZYDebugServerListVC.m */; };
 		0C8BB4CC1DEEA4D00080E6BA /* LineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4CB1DEEA4D00080E6BA /* LineView.m */; };
 		0C8BB4CF1DEEA53F0080E6BA /* UIColor+ZYUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4CE1DEEA53F0080E6BA /* UIColor+ZYUtility.m */; };
+		0C8BB5201DEFF0780080E6BA /* GCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB5141DEFF0780080E6BA /* GCAlertView.m */; };
+		0C8BB5211DEFF0780080E6BA /* ABCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB5171DEFF0780080E6BA /* ABCrashReport.m */; };
+		0C8BB5221DEFF0780080E6BA /* ABNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB5191DEFF0780080E6BA /* ABNotice.m */; };
+		0C8BB5231DEFF0780080E6BA /* ABNotifier.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BB51A1DEFF0780080E6BA /* ABNotifier.bundle */; };
+		0C8BB5241DEFF0780080E6BA /* ABNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB51C1DEFF0780080E6BA /* ABNotifier.m */; };
+		0C8BB5251DEFF0780080E6BA /* ABNotifierFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB51F1DEFF0780080E6BA /* ABNotifierFunctions.m */; };
+		0C8BB5271DEFF0830080E6BA /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8BB5261DEFF0830080E6BA /* CrashReporter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,19 @@
 		0C8BB4CB1DEEA4D00080E6BA /* LineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineView.m; sourceTree = "<group>"; };
 		0C8BB4CD1DEEA53F0080E6BA /* UIColor+ZYUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZYUtility.h"; sourceTree = "<group>"; };
 		0C8BB4CE1DEEA53F0080E6BA /* UIColor+ZYUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZYUtility.m"; sourceTree = "<group>"; };
+		0C8BB5131DEFF0780080E6BA /* GCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCAlertView.h; sourceTree = "<group>"; };
+		0C8BB5141DEFF0780080E6BA /* GCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCAlertView.m; sourceTree = "<group>"; };
+		0C8BB5161DEFF0780080E6BA /* ABCrashReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCrashReport.h; sourceTree = "<group>"; };
+		0C8BB5171DEFF0780080E6BA /* ABCrashReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCrashReport.m; sourceTree = "<group>"; };
+		0C8BB5181DEFF0780080E6BA /* ABNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotice.h; sourceTree = "<group>"; };
+		0C8BB5191DEFF0780080E6BA /* ABNotice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotice.m; sourceTree = "<group>"; };
+		0C8BB51A1DEFF0780080E6BA /* ABNotifier.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ABNotifier.bundle; sourceTree = "<group>"; };
+		0C8BB51B1DEFF0780080E6BA /* ABNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifier.h; sourceTree = "<group>"; };
+		0C8BB51C1DEFF0780080E6BA /* ABNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotifier.m; sourceTree = "<group>"; };
+		0C8BB51D1DEFF0780080E6BA /* ABNotifierDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifierDelegate.h; sourceTree = "<group>"; };
+		0C8BB51E1DEFF0780080E6BA /* ABNotifierFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifierFunctions.h; sourceTree = "<group>"; };
+		0C8BB51F1DEFF0780080E6BA /* ABNotifierFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotifierFunctions.m; sourceTree = "<group>"; };
+		0C8BB5261DEFF0830080E6BA /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8BB5271DEFF0830080E6BA /* CrashReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +188,8 @@
 		0C8BB4B61DEC1A590080E6BA /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				0C8BB50F1DEFCCAE0080E6BA /* Framework */,
+				0C8BB5101DEFCCAE0080E6BA /* Thirdparty */,
 				0C8BB4B71DEC1A590080E6BA /* Category */,
 				0C8BB4B81DEC1A590080E6BA /* Controller */,
 				0C8BB4B91DEC1A590080E6BA /* Model */,
@@ -214,6 +237,57 @@
 				0C8BB4CB1DEEA4D00080E6BA /* LineView.m */,
 			);
 			path = Configure;
+			sourceTree = "<group>";
+		};
+		0C8BB50F1DEFCCAE0080E6BA /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB5261DEFF0830080E6BA /* CrashReporter.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		0C8BB5101DEFCCAE0080E6BA /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB5111DEFF0780080E6BA /* Airbrake */,
+			);
+			path = Thirdparty;
+			sourceTree = "<group>";
+		};
+		0C8BB5111DEFF0780080E6BA /* Airbrake */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB5121DEFF0780080E6BA /* gcalertview */,
+				0C8BB5151DEFF0780080E6BA /* notifier */,
+			);
+			path = Airbrake;
+			sourceTree = "<group>";
+		};
+		0C8BB5121DEFF0780080E6BA /* gcalertview */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB5131DEFF0780080E6BA /* GCAlertView.h */,
+				0C8BB5141DEFF0780080E6BA /* GCAlertView.m */,
+			);
+			path = gcalertview;
+			sourceTree = "<group>";
+		};
+		0C8BB5151DEFF0780080E6BA /* notifier */ = {
+			isa = PBXGroup;
+			children = (
+				0C8BB5161DEFF0780080E6BA /* ABCrashReport.h */,
+				0C8BB5171DEFF0780080E6BA /* ABCrashReport.m */,
+				0C8BB5181DEFF0780080E6BA /* ABNotice.h */,
+				0C8BB5191DEFF0780080E6BA /* ABNotice.m */,
+				0C8BB51A1DEFF0780080E6BA /* ABNotifier.bundle */,
+				0C8BB51B1DEFF0780080E6BA /* ABNotifier.h */,
+				0C8BB51C1DEFF0780080E6BA /* ABNotifier.m */,
+				0C8BB51D1DEFF0780080E6BA /* ABNotifierDelegate.h */,
+				0C8BB51E1DEFF0780080E6BA /* ABNotifierFunctions.h */,
+				0C8BB51F1DEFF0780080E6BA /* ABNotifierFunctions.m */,
+			);
+			path = notifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8BB5231DEFF0780080E6BA /* ABNotifier.bundle in Resources */,
 				0C8BB4931DEC128F0080E6BA /* LaunchScreen.storyboard in Resources */,
 				0C8BB4901DEC128F0080E6BA /* Assets.xcassets in Resources */,
 				0C8BB48E1DEC128F0080E6BA /* Main.storyboard in Resources */,
@@ -352,13 +427,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C8BB5251DEFF0780080E6BA /* ABNotifierFunctions.m in Sources */,
 				0C8BB4CC1DEEA4D00080E6BA /* LineView.m in Sources */,
 				0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */,
+				0C8BB5221DEFF0780080E6BA /* ABNotice.m in Sources */,
 				0C8BB4C41DED4B000080E6BA /* PublicMethods.m in Sources */,
+				0C8BB5241DEFF0780080E6BA /* ABNotifier.m in Sources */,
 				0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */,
+				0C8BB5211DEFF0780080E6BA /* ABCrashReport.m in Sources */,
 				0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */,
 				0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */,
 				0C8BB4C71DED4EFD0080E6BA /* ZYDebugServerListVC.m in Sources */,
+				0C8BB5201DEFF0780080E6BA /* GCAlertView.m in Sources */,
 				0C8BB4851DEC128F0080E6BA /* main.m in Sources */,
 				0C8BB4CF1DEEA53F0080E6BA /* UIColor+ZYUtility.m in Sources */,
 			);
@@ -510,6 +590,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C73Q85RKN6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYDebug/Debug/Framework",
+				);
 				GCC_PREFIX_HEADER = ZYDebug/ZYDebug_Prefix.pch;
 				INFOPLIST_FILE = ZYDebug/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -524,6 +608,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C73Q85RKN6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYDebug/Debug/Framework",
+				);
 				GCC_PREFIX_HEADER = ZYDebug/ZYDebug_Prefix.pch;
 				INFOPLIST_FILE = ZYDebug/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;

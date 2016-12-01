@@ -354,7 +354,9 @@
     [PublicMethods resignKeyboard];
 }
 
+// =======================================================================
 #pragma mark textField 代理方法
+// =======================================================================
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     [textField resignFirstResponder];
