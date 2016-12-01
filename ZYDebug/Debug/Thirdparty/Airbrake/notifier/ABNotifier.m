@@ -327,6 +327,31 @@ void ABNotifierReachabilityDidChange(SCNetworkReachabilityRef target, SCNetworkR
                                         ABNotifierCurrentViewController(), ABNotifierControllerKey,
 #endif
                                         nil];
+            
+            // 保存crash信息
+            NSArray *arrayCrashInfoSaved = [PublicMethods fetchArrayAtPathComponent:kCrashInfoFile forKey:kCrashInfoArchiverKey];
+            
+            NSMutableArray *arrayCrashInfo = [[NSMutableArray alloc] initWithArray:arrayCrashInfoSaved];
+            // 填入当前crash
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            [dateFormatter setDateFormat: @"yyyy-MM-dd HH:mm:ss"];
+            NSString *stringDateNow = [dateFormatter stringFromDate:[NSDate date]];
+            
+            // 计算启动到奔溃的时间
+            NSDate *systemLaunchTime = [[NSUserDefaults standardUserDefaults] objectForKey:kSystemLaunchTimeKey];
+            NSString *stringDateLaunch = [dateFormatter stringFromDate:systemLaunchTime];
+            NSString *stringInterval = [PublicMethods intervalSinceNow:stringDateLaunch];
+            
+            // 填充为key值
+            NSString *crashDateString = [NSString stringWithFormat:@"%@__%@",stringDateNow,stringInterval];
+            NSDictionary *currCrash = [NSDictionary dictionaryWithObject:dictionary forKey:crashDateString];
+            [arrayCrashInfo insertObject:currCrash atIndex:0];
+            // 将crash信息写入文件
+            if (DEBUGBAR_SWITCH)
+            {
+                [PublicMethods storeArray:arrayCrashInfo atPathComponent:kCrashInfoFile forKey:kCrashInfoArchiverKey];
+            }
+            
             NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dictionary];
             unsigned long length = [data length];
             write(fd, &length, sizeof(unsigned long));

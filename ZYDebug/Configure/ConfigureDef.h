@@ -11,11 +11,16 @@
 
 #endif
 
+// crash文件信息
+#define kSystemLaunchTimeKey                    @"systemLaunchTime"
+
 // 文件保存名
 #define kServerListFile                         @"serverList.dat"
+#define kCrashInfoFile                          @"CrashInfo.dat"
 
 // 文件保存key
-#define kServerListArchiverKey                  @"zhArrayServerList"
+#define kServerListArchiverKey                  @"ArrayServerList"
+#define kCrashInfoArchiverKey                   @"CrashInfo"
 
 // 服务端链接Key
 #define SERVERURL                               @"SERVERURL"

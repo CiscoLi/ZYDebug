@@ -10,6 +10,9 @@
 
 @interface PublicMethods : NSObject
 
+// 计算时间差
++ (NSString *)intervalSinceNow: (NSString *) theDate;
+
 // 消除键盘
 + (void)resignKeyboard;
 

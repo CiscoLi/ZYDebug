@@ -10,6 +10,46 @@
 
 @implementation PublicMethods
 
+// 计算时间差
++ (NSString *)intervalSinceNow: (NSString *) theDate
+{
+    
+    NSDateFormatter *date=[[NSDateFormatter alloc] init];
+    [date setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *d=[date dateFromString:theDate];
+    
+    NSTimeInterval late=[d timeIntervalSince1970]*1;
+    
+    
+    NSDate* dat = [NSDate dateWithTimeIntervalSinceNow:0];
+    NSTimeInterval now=[dat timeIntervalSince1970]*1;
+    NSString *timeString=@"";
+    
+    NSTimeInterval cha=(now-late);
+    
+    if (cha/60<1) {
+        timeString = [NSString stringWithFormat:@"%.1f", cha];
+        timeString=[NSString stringWithFormat:@"%@秒", timeString];
+        
+    }
+    if (cha/60>1&&cha/3600<1) {
+        timeString = [NSString stringWithFormat:@"%.1f", (cha*1.0)/60];
+        timeString=[NSString stringWithFormat:@"%@分钟", timeString];
+        
+    }
+    if (cha/3600>1&&cha/86400<1) {
+        timeString = [NSString stringWithFormat:@"%.1f", (cha*1.0)/3600];
+        timeString=[NSString stringWithFormat:@"%@小时", timeString];
+    }
+    if (cha/86400>1)
+    {
+        timeString = [NSString stringWithFormat:@"%.1f", (cha*1.0)/86400];
+        timeString=[NSString stringWithFormat:@"%@天", timeString];
+        
+    }
+    return timeString;
+}
+
 // 消除键盘
 + (void)resignKeyboard
 {
