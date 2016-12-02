@@ -21,6 +21,7 @@
 
 // 公用方法
 #import "PublicMethods.h"
+#import "Profile.h"
 
 #import "UIColor+ZYUtility.h"
 #import "UIView+ZYUtility.h"

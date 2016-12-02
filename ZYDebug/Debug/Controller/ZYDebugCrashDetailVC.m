@@ -25,7 +25,7 @@
 #define	kCrashDetailContentLabelFont                    [UIFont systemFontOfSize:10.0f]
 #define	kCrashDetailCrashTitleLabelFont                 [UIFont boldSystemFontOfSize:16.0f]
 
-@interface ZYDebugCrashDetailVC ()
+@interface ZYDebugCrashDetailVC ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 
