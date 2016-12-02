@@ -206,12 +206,12 @@ enum CrashListVCTag {
         
         if (DICTIONARYHASVALUE(crashDic))
         {
-//            DebugCrashDetailVC *controller = [[DebugCrashDetailVC alloc] init];
-//            [controller setCrashTime:[[crashDic allKeys] objectAtIndex:0]];
-//            [controller setCrashDetail:[[crashDic allValues] objectAtIndex:0]];
-//            
-//            // 获取crash步骤
-//            [self.navigationController pushViewController:controller animated:YES];
+            DebugCrashDetailVC *controller = [[DebugCrashDetailVC alloc] init];
+            [controller setCrashTime:[[crashDic allKeys] objectAtIndex:0]];
+            [controller setCrashDetail:[[crashDic allValues] objectAtIndex:0]];
+            
+            // 获取crash步骤
+            [self.navigationController pushViewController:controller animated:YES];
             
         }
     }
