@@ -7,6 +7,7 @@
 //
 
 #import "ZYDebugCrashListVC.h"
+#import "ZYDebugCrashDetailVC.h"
 
 // ==================================================================
 // 布局参数
@@ -206,7 +207,7 @@ enum CrashListVCTag {
         
         if (DICTIONARYHASVALUE(crashDic))
         {
-            DebugCrashDetailVC *controller = [[DebugCrashDetailVC alloc] init];
+            ZYDebugCrashDetailVC *controller = [[ZYDebugCrashDetailVC alloc] init];
             [controller setCrashTime:[[crashDic allKeys] objectAtIndex:0]];
             [controller setCrashDetail:[[crashDic allValues] objectAtIndex:0]];
             
