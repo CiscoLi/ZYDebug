@@ -28,6 +28,7 @@
 		0C8BB5241DEFF0780080E6BA /* ABNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB51C1DEFF0780080E6BA /* ABNotifier.m */; };
 		0C8BB5251DEFF0780080E6BA /* ABNotifierFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB51F1DEFF0780080E6BA /* ABNotifierFunctions.m */; };
 		0C8BB5271DEFF0830080E6BA /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8BB5261DEFF0830080E6BA /* CrashReporter.framework */; };
+		0C8BB52A1DF122F00080E6BA /* ZYDebugCrashListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB5291DF122F00080E6BA /* ZYDebugCrashListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		0C8BB51E1DEFF0780080E6BA /* ABNotifierFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABNotifierFunctions.h; sourceTree = "<group>"; };
 		0C8BB51F1DEFF0780080E6BA /* ABNotifierFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABNotifierFunctions.m; sourceTree = "<group>"; };
 		0C8BB5261DEFF0830080E6BA /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashReporter.framework; sourceTree = "<group>"; };
+		0C8BB5281DF122F00080E6BA /* ZYDebugCrashListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDebugCrashListVC.h; sourceTree = "<group>"; };
+		0C8BB5291DF122F00080E6BA /* ZYDebugCrashListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDebugCrashListVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +214,8 @@
 		0C8BB4B81DEC1A590080E6BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0C8BB5281DF122F00080E6BA /* ZYDebugCrashListVC.h */,
+				0C8BB5291DF122F00080E6BA /* ZYDebugCrashListVC.m */,
 				0C8BB4C51DED4EFD0080E6BA /* ZYDebugServerListVC.h */,
 				0C8BB4C61DED4EFD0080E6BA /* ZYDebugServerListVC.m */,
 			);
@@ -429,6 +434,7 @@
 			files = (
 				0C8BB5251DEFF0780080E6BA /* ABNotifierFunctions.m in Sources */,
 				0C8BB4CC1DEEA4D00080E6BA /* LineView.m in Sources */,
+				0C8BB52A1DF122F00080E6BA /* ZYDebugCrashListVC.m in Sources */,
 				0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */,
 				0C8BB5221DEFF0780080E6BA /* ABNotice.m in Sources */,
 				0C8BB4C41DED4B000080E6BA /* PublicMethods.m in Sources */,
