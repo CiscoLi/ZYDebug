@@ -12,6 +12,7 @@
 		0C5AA36A1DF14BB0009CE341 /* debug_item_2_ico@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5AA3651DF14BB0009CE341 /* debug_item_2_ico@2x.png */; };
 		0C5AA36B1DF14BB0009CE341 /* debug_item_3_ico@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5AA3661DF14BB0009CE341 /* debug_item_3_ico@2x.png */; };
 		0C5AA36C1DF14BB0009CE341 /* debug_item_4_ico@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C5AA3671DF14BB0009CE341 /* debug_item_4_ico@2x.png */; };
+		0C5AA36F1DF2DA21009CE341 /* ZYDebugCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C5AA36E1DF2DA21009CE341 /* ZYDebugCenter.m */; };
 		0C8BB4851DEC128F0080E6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4841DEC128F0080E6BA /* main.m */; };
 		0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4871DEC128F0080E6BA /* AppDelegate.m */; };
 		0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB48A1DEC128F0080E6BA /* ViewController.m */; };
@@ -62,6 +63,8 @@
 		0C5AA3651DF14BB0009CE341 /* debug_item_2_ico@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "debug_item_2_ico@2x.png"; sourceTree = "<group>"; };
 		0C5AA3661DF14BB0009CE341 /* debug_item_3_ico@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "debug_item_3_ico@2x.png"; sourceTree = "<group>"; };
 		0C5AA3671DF14BB0009CE341 /* debug_item_4_ico@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "debug_item_4_ico@2x.png"; sourceTree = "<group>"; };
+		0C5AA36D1DF2DA21009CE341 /* ZYDebugCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDebugCenter.h; sourceTree = "<group>"; };
+		0C5AA36E1DF2DA21009CE341 /* ZYDebugCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDebugCenter.m; sourceTree = "<group>"; };
 		0C8BB4801DEC128F0080E6BA /* ZYDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C8BB4841DEC128F0080E6BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0C8BB4861DEC128F0080E6BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -256,6 +259,8 @@
 		0C8BB4B81DEC1A590080E6BA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0C5AA36D1DF2DA21009CE341 /* ZYDebugCenter.h */,
+				0C5AA36E1DF2DA21009CE341 /* ZYDebugCenter.m */,
 				0C8BB5311DF141D70080E6BA /* ZYDebugStatebar.h */,
 				0C8BB5321DF141D70080E6BA /* ZYDebugStatebar.m */,
 				0C8BB5281DF122F00080E6BA /* ZYDebugCrashListVC.h */,
@@ -495,6 +500,7 @@
 				0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */,
 				0C8BB52D1DF13B6F0080E6BA /* ZYDebugCrashDetailVC.m in Sources */,
 				0C8BB5211DEFF0780080E6BA /* ABCrashReport.m in Sources */,
+				0C5AA36F1DF2DA21009CE341 /* ZYDebugCenter.m in Sources */,
 				0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */,
 				0C8BB4BC1DEC1E650080E6BA /* UIDevice+ZYHardware.m in Sources */,
 				0C8BB4C71DED4EFD0080E6BA /* ZYDebugServerListVC.m in Sources */,
