@@ -7,6 +7,9 @@
 //
 
 #import "ZYDebugCenter.h"
+#import "ZYDebugStatebar.h"
+
+static ZYDebugCenter *debugCenter = nil;
 
 @interface ZYDebugCenter ()
 
@@ -17,6 +20,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
++ (id)shared {
+    if (!debugCenter) {
+        @synchronized (self) {
+            debugCenter = [[ZYDebugCenter alloc] init];
+        }
+    }
+    
+    return debugCenter;
+}
+
+- (void)starObserveDevice {
+    if (!stateBar) {
+        stateBar = [[ZYDebugStatebar alloc] init];
+        [stateBar starScan];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
