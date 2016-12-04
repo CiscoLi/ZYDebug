@@ -7,8 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ZYDebugCenter.h"
+#import "ABNotifier.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<ABNotifierDelegate>
 
 @end
 
@@ -17,6 +19,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // debug模式启动资源扫瞄
+    [[ZYDebugCenter shared] starObserveDevice];
+    
+    // 暂时不支持iphone6s和iphone6sPlus
+    NSString *platString = [[UIDevice currentDevice] platformString];
+    if (![platString isEqualToString:IPHONE_6S_NAMESTRING] && ![platString isEqualToString:IPHONE_6SPLUS_NAMESTRING])
+    {
+        // ====================================================================
+        // 程序异常记录
+        // ====================================================================
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        [ABNotifier startNotifierWithAPIKey:@"com.zhaoyang.www"
+                                  projectID:@"ZYDebug"
+                            environmentName:ABNotifierDevelopmentEnvironment
+                                   userName:@"zhaoyang"
+                                     useSSL:NO
+                                   delegate:appDelegate
+                    installExceptionHandler:YES
+                       installSignalHandler:YES
+                          displayUserPrompt:NO];
+        
+        [ABNotifier setEnvironmentValue:@"ZHDebug" forKey:@"程序异常"];
+    }
+
     return YES;
 }
 
