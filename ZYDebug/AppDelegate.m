@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ZYDebugCenter.h"
 #import "ABNotifier.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()<ABNotifierDelegate>
 
@@ -19,6 +20,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    ViewController *vc = [[ViewController alloc]init];
+    
+    self.window.rootViewController = vc;
+    
+    [self.window makeKeyAndVisible];
+    
     // debug模式启动资源扫瞄
     [[ZYDebugCenter shared] starObserveDevice];
     
@@ -42,6 +53,7 @@
         
         [ABNotifier setEnvironmentValue:@"ZHDebug" forKey:@"程序异常"];
     }
+
 
     return YES;
 }

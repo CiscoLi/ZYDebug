@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "LockView.h"
+#import "VCBackView.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    VCBackView *backVC = [[VCBackView alloc]init];
+    backVC.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    LockView *view = [LockView lockView];
+    view.frame = CGRectMake(0, 75, 375,460);
+    
+    [self.view addSubview:backVC];
+    [self.view addSubview:view];
 }
 
 

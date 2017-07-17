@@ -16,7 +16,6 @@
 		0C8BB4851DEC128F0080E6BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4841DEC128F0080E6BA /* main.m */; };
 		0C8BB4881DEC128F0080E6BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB4871DEC128F0080E6BA /* AppDelegate.m */; };
 		0C8BB48B1DEC128F0080E6BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB48A1DEC128F0080E6BA /* ViewController.m */; };
-		0C8BB48E1DEC128F0080E6BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BB48C1DEC128F0080E6BA /* Main.storyboard */; };
 		0C8BB4901DEC128F0080E6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BB48F1DEC128F0080E6BA /* Assets.xcassets */; };
 		0C8BB4931DEC128F0080E6BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8BB4911DEC128F0080E6BA /* LaunchScreen.storyboard */; };
 		0C8BB49E1DEC128F0080E6BA /* ZYDebugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB49D1DEC128F0080E6BA /* ZYDebugTests.m */; };
@@ -38,6 +37,9 @@
 		0C8BB52D1DF13B6F0080E6BA /* ZYDebugCrashDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB52C1DF13B6F0080E6BA /* ZYDebugCrashDetailVC.m */; };
 		0C8BB5301DF13C870080E6BA /* UIView+ZYUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB52F1DF13C870080E6BA /* UIView+ZYUtility.m */; };
 		0C8BB5331DF141D70080E6BA /* ZYDebugStatebar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BB5321DF141D70080E6BA /* ZYDebugStatebar.m */; };
+		0C9639821F1C681500811703 /* LockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9639811F1C681500811703 /* LockView.m */; };
+		0C9639851F1C685000811703 /* VCBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9639841F1C685000811703 /* VCBackView.m */; };
+		0C9639871F1C74A900811703 /* LockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9639861F1C74A900811703 /* LockView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +73,6 @@
 		0C8BB4871DEC128F0080E6BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0C8BB4891DEC128F0080E6BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0C8BB48A1DEC128F0080E6BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0C8BB48D1DEC128F0080E6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0C8BB48F1DEC128F0080E6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C8BB4921DEC128F0080E6BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C8BB4941DEC128F0080E6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +118,11 @@
 		0C8BB52F1DF13C870080E6BA /* UIView+ZYUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYUtility.m"; sourceTree = "<group>"; };
 		0C8BB5311DF141D70080E6BA /* ZYDebugStatebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYDebugStatebar.h; sourceTree = "<group>"; };
 		0C8BB5321DF141D70080E6BA /* ZYDebugStatebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYDebugStatebar.m; sourceTree = "<group>"; };
+		0C9639801F1C681500811703 /* LockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockView.h; sourceTree = "<group>"; };
+		0C9639811F1C681500811703 /* LockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockView.m; sourceTree = "<group>"; };
+		0C9639831F1C685000811703 /* VCBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBackView.h; sourceTree = "<group>"; };
+		0C9639841F1C685000811703 /* VCBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBackView.m; sourceTree = "<group>"; };
+		0C9639861F1C74A900811703 /* LockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +200,6 @@
 				0C8BB4871DEC128F0080E6BA /* AppDelegate.m */,
 				0C8BB4891DEC128F0080E6BA /* ViewController.h */,
 				0C8BB48A1DEC128F0080E6BA /* ViewController.m */,
-				0C8BB48C1DEC128F0080E6BA /* Main.storyboard */,
 				0C8BB48F1DEC128F0080E6BA /* Assets.xcassets */,
 				0C8BB4911DEC128F0080E6BA /* LaunchScreen.storyboard */,
 				0C8BB4941DEC128F0080E6BA /* Info.plist */,
@@ -233,6 +238,7 @@
 		0C8BB4B61DEC1A590080E6BA /* Debug */ = {
 			isa = PBXGroup;
 			children = (
+				0C96397B1F1C67DB00811703 /* Cotrol */,
 				0C5AA3611DF14BB0009CE341 /* Resource */,
 				0C8BB50F1DEFCCAE0080E6BA /* Framework */,
 				0C8BB5101DEFCCAE0080E6BA /* Thirdparty */,
@@ -344,6 +350,50 @@
 				0C8BB51F1DEFF0780080E6BA /* ABNotifierFunctions.m */,
 			);
 			path = notifier;
+			sourceTree = "<group>";
+		};
+		0C96397B1F1C67DB00811703 /* Cotrol */ = {
+			isa = PBXGroup;
+			children = (
+				0C96397C1F1C67DB00811703 /* Controller */,
+				0C96397D1F1C67DB00811703 /* Model */,
+				0C96397E1F1C67DB00811703 /* View */,
+			);
+			path = Cotrol;
+			sourceTree = "<group>";
+		};
+		0C96397C1F1C67DB00811703 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C96397D1F1C67DB00811703 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C96397E1F1C67DB00811703 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0C96397F1F1C67F900811703 /* LockView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C96397F1F1C67F900811703 /* LockView */ = {
+			isa = PBXGroup;
+			children = (
+				0C9639801F1C681500811703 /* LockView.h */,
+				0C9639811F1C681500811703 /* LockView.m */,
+				0C9639861F1C74A900811703 /* LockView.xib */,
+				0C9639831F1C685000811703 /* VCBackView.h */,
+				0C9639841F1C685000811703 /* VCBackView.m */,
+			);
+			path = LockView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,11 +508,11 @@
 				0C8BB5231DEFF0780080E6BA /* ABNotifier.bundle in Resources */,
 				0C8BB4931DEC128F0080E6BA /* LaunchScreen.storyboard in Resources */,
 				0C8BB4901DEC128F0080E6BA /* Assets.xcassets in Resources */,
+				0C9639871F1C74A900811703 /* LockView.xib in Resources */,
 				0C5AA3691DF14BB0009CE341 /* debug_item_1_ico@2x.png in Resources */,
 				0C5AA36C1DF14BB0009CE341 /* debug_item_4_ico@2x.png in Resources */,
 				0C5AA36A1DF14BB0009CE341 /* debug_item_2_ico@2x.png in Resources */,
 				0C5AA36B1DF14BB0009CE341 /* debug_item_3_ico@2x.png in Resources */,
-				0C8BB48E1DEC128F0080E6BA /* Main.storyboard in Resources */,
 				0C5AA3681DF14BB0009CE341 /* debug_item_0_ico@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C8BB5251DEFF0780080E6BA /* ABNotifierFunctions.m in Sources */,
+				0C9639821F1C681500811703 /* LockView.m in Sources */,
 				0C8BB5301DF13C870080E6BA /* UIView+ZYUtility.m in Sources */,
 				0C8BB4CC1DEEA4D00080E6BA /* LineView.m in Sources */,
 				0C8BB52A1DF122F00080E6BA /* ZYDebugCrashListVC.m in Sources */,
@@ -496,6 +547,7 @@
 				0C8BB5221DEFF0780080E6BA /* ABNotice.m in Sources */,
 				0C8BB5331DF141D70080E6BA /* ZYDebugStatebar.m in Sources */,
 				0C8BB4C41DED4B000080E6BA /* PublicMethods.m in Sources */,
+				0C9639851F1C685000811703 /* VCBackView.m in Sources */,
 				0C8BB5241DEFF0780080E6BA /* ABNotifier.m in Sources */,
 				0C8BB4BF1DED213F0080E6BA /* Profile.m in Sources */,
 				0C8BB52D1DF13B6F0080E6BA /* ZYDebugCrashDetailVC.m in Sources */,
@@ -542,14 +594,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0C8BB48C1DEC128F0080E6BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0C8BB48D1DEC128F0080E6BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0C8BB4911DEC128F0080E6BA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -662,7 +706,7 @@
 				);
 				GCC_PREFIX_HEADER = ZYDebug/ZYDebug_Prefix.pch;
 				INFOPLIST_FILE = ZYDebug/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -680,7 +724,7 @@
 				);
 				GCC_PREFIX_HEADER = ZYDebug/ZYDebug_Prefix.pch;
 				INFOPLIST_FILE = ZYDebug/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaoyang.www.ZYDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
